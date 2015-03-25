@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Persistent/Persistent.iml" filepath="$PROJECT_DIR$/Persistent/Persistent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Prototypes.iml" filepath="$PROJECT_DIR$/.idea/Prototypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TopLayer/TopLayer.iml" filepath="$PROJECT_DIR$/TopLayer/TopLayer.iml" />
+    </modules>
+  </component>
+</project>
