@@ -1,21 +1,16 @@
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import prototype.domain.entities.PatientEntity;
+import prototype.persisten.broker.BrokerFacade;
 
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
-
-
+/**
+ * Created by Norskan on 29.03.2015.
+ */
+public class Main {
     public static void main(String[] args) {
-        launch(args);
+        BrokerFacade brokerFacade = BrokerFacade.getInstanze();
+
+        PatientEntity patientEntity = (PatientEntity)brokerFacade.getByID(PatientEntity.class,1);
+
+        System.out.println(patientEntity.getFirstName());
+        System.out.println(patientEntity.getLastName());
     }
 }
